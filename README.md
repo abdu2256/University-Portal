@@ -1,119 +1,235 @@
-# 🎓 University Portal — CUOnline Style
+# University Portal CUOnline 🎓
 
-> Full-stack university management system like COMSATS/Bahria — built with **Node.js · Express · MongoDB · React**
+A full-stack university management portal inspired by COMSATS CUOnline, built using the MERN Stack.
+
+This platform provides role-based access for:
+- Students
+- Faculty
+- Administrators
+
+The system manages:
+- Attendance
+- Courses
+- Fee records
+- Marks
+- FYP management
+- Announcements
+- AI chatbot support
 
 ---
 
-## ✨ Features
+# Features ✨
 
-| Role | Features |
-|---|---|
-| 🎓 **Student** | Dashboard, Registered Courses + Attendance bars, Result Card, Fees, Timetable, Course Registration, Profile, FYP, APS, Clearance |
-| 👨‍🏫 **Faculty** | Dashboard, My Courses, Mark Attendance (P/A/L), Upload Marks, Grades |
-| 🛡️ **Admin** | System stats, Student management, Faculty management, Courses, Fees, Announcements |
+## Student Portal
+- Student Dashboard
+- Attendance Tracking
+- Fee Management
+- Course Enrollment
+- Academic Records
+- GPA/CGPA Display
+- Announcements
+- FYP Details
+
+## Faculty Portal
+- Manage Courses
+- Upload Attendance
+- Upload Marks
+- Student Management
+
+## Admin Portal
+- User Management
+- Course Management
+- Reports & Analytics
+- System Monitoring
+
+## AI Features
+- AI Chatbot Assistant
+- Smart Academic Support
+- Automation Features
 
 ---
 
-## 🚀 Quick Start
+# Tech Stack 🛠️
 
-### 1 — Install
+## Frontend
+- React.js
+- CSS
+- Axios
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- MongoDB
+
+## Authentication
+- JWT Authentication
+
+---
+
+# Installation ⚙️
+
+## Clone Repository
+
 ```bash
-unzip university-portal.zip
-cd university-portal
-npm run install:all
+git clone https://github.com/YOUR_USERNAME/university-portal-cuonline.git
 ```
 
-### 2 — Configure `backend/.env`
-```env
-MONGODB_URI=mongodb://localhost:27017/university_portal
-JWT_SECRET=any_long_random_string_here
-```
+---
 
-### 3 — Start MongoDB
-```bash
-mongod
-```
-Or use free MongoDB Atlas — paste URI in `.env`.
+# Backend Setup
 
-### 4 — Seed the database
 ```bash
 cd backend
-node seed.js
-```
-
-### 5 — Run
-```bash
-cd ..
+npm install
 npm run dev
-# Backend  → http://localhost:5000
-# Frontend → http://localhost:3000
 ```
 
 ---
 
-## 🔑 Login Credentials
+# Frontend Setup
 
-| Role    | Registration No        | Password       |
-|---------|------------------------|----------------|
-| Student | SP24-BBA-201/ISB       | Student@1234   |
-| Faculty | FAC-BBA-001            | Faculty@1234   |
-| Admin   | ADMIN-001              | Admin@1234     |
-
----
-
-## 📁 Project Structure
-
-```
-university-portal/
-├── backend/
-│   ├── config/db.js              → MongoDB connection
-│   ├── controllers/
-│   │   ├── authController.js     → login, me, profile
-│   │   ├── studentController.js  → dashboard, attendance, result, fees, timetable, registration, fyp, aps
-│   │   ├── facultyController.js  → courses, attendance marking, marks upload
-│   │   └── adminController.js    → stats, users CRUD, courses, announcements, fees
-│   ├── middleware/auth.js        → JWT protect + role restriction
-│   ├── models/
-│   │   ├── User.js               → student/faculty/admin schema
-│   │   └── index.js              → Course, Enrollment, Attendance, Marks, Fee, Announcement, FYP
-│   ├── routes/                   → auth, student, faculty, admin
-│   ├── seed.js                   → full demo data seeder
-│   └── server.js                 → Express entry point
-├── frontend/
-│   └── src/
-│       ├── components/layout/PortalLayout.jsx  → header, nav icons, footer
-│       ├── context/AuthContext.jsx             → global auth state
-│       ├── pages/
-│       │   ├── auth/Login.jsx        → COMSATS-style login
-│       │   ├── student/              → 10 student pages
-│       │   ├── faculty/              → 3 faculty pages
-│       │   └── admin/                → 2 admin pages
-│       ├── services/api.js           → all axios calls
-│       └── App.jsx                   → routing + role guards
-└── README.md
+```bash
+cd frontend
+npm install
+npm start
 ```
 
 ---
 
-## 🌐 Deploy
+# Demo Login Credentials 🔐
 
-### Backend → Render (free)
-```
-New Web Service → connect GitHub
-Root: backend | Build: npm install | Start: node server.js
-Add env vars: MONGODB_URI, JWT_SECRET, FRONTEND_URL
+## Admin
+Registration Number:
+```bash
+ADMIN-001
 ```
 
-### Frontend → Vercel (free)
-```
-Import repo → root: frontend → build: npm run build
-Add: REACT_APP_API_URL=https://your-backend.onrender.com/api
+Password:
+```bash
+Admin@1234
 ```
 
 ---
 
-## 📝 CV Description
+## Student
+Registration Number:
+```bash
+SP24-BBA-201/ISB
+```
 
-> **University Management Portal (CUOnline)** | Node.js · Express · MongoDB · React · JWT
->
-> Built a full-stack university portal similar to COMSATS CUOnline with three role-based dashboards (Student, Faculty, Admin). Student features: registered courses with attendance bars, result cards, fee statements, weekly timetable, course registration, FYP tracking, APS, and clearance. Faculty: attendance marking, marks upload. Admin: user management, system stats. JWT authentication, bcrypt password hashing, MongoDB with 7 Mongoose models, 25+ REST API endpoints. Deployed on Render + Vercel.
+Password:
+```bash
+Student@1234
+```
+
+---
+
+## Faculty
+Registration Number:
+```bash
+FAC-BBA-001
+```
+
+Password:
+```bash
+Faculty@1234
+```
+
+---
+
+# Screenshots 📸
+
+## Login Page
+
+(Add screenshot here later)
+
+---
+
+## Dashboard
+
+(Add screenshot here later)
+
+---
+
+## Student Portal
+
+# 📸 Screenshots
+
+## Login Page
+
+![Login Page](./screenshots/login.png.png)
+
+---
+
+## Student Dashboard
+
+![Student Dashboard](./screenshots/student-dashboard.png.png)
+
+---
+
+## Faculty Dashboard
+
+![Faculty Dashboard](./screenshots/faculty-dashboard.png.png)
+
+---
+
+## Admin Dashboard
+
+![Admin Dashboard](./screenshots/admin-dashboard.png.png)
+
+---
+
+## Result Card
+
+![Result Card](./screenshots/result-card.png.png)
+
+---
+
+## Attendance
+
+![Attendance](./screenshots/attendance.png.png)
+
+---
+
+# Project Status 🚧
+
+This project is currently under development and built for learning, portfolio, and demonstration purposes.
+
+---
+
+# Future Improvements 🚀
+
+- Real-time notifications
+- AI GPA prediction
+- Smart timetable generator
+- Online assignments
+- PDF transcript generation
+- AI academic assistant
+- Cloud deployment
+
+---
+
+# Repository Details 📂
+
+Name:
+`university-portal-cuonline`
+
+Description:
+`Full-stack university management portal (COMSATS CUOnline style) - MERN Stack`
+
+Topics:
+- mern-stack
+- nodejs
+- react
+- mongodb
+- jwt
+- university-portal
+- expressjs
+
+---
+
+# Author 👨‍💻
+
+Abdullah Basit
