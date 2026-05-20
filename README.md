@@ -137,59 +137,43 @@ Password:
 Faculty@1234
 ```
 
----
-
-# Screenshots 📸
-
-## Login Page
-
-(Add screenshot here later)
-
----
-
-## Dashboard
-
-(Add screenshot here later)
-
----
-
-## Student Portal
+#
 
 # 📸 Screenshots
 
 ## Login Page
 
-![Login Page](./screenshots/login.png.png)
+![Login Page](./screenshots/login.png)
 
 ---
 
 ## Student Dashboard
 
-![Student Dashboard](./screenshots/student-dashboard.png.png)
+![Student Dashboard](./screenshots/student-dashboard.png)
 
 ---
 
 ## Faculty Dashboard
 
-![Faculty Dashboard](./screenshots/faculty-dashboard.png.png)
+![Faculty Dashboard](./screenshots/faculty-dashboard.png)
 
 ---
 
 ## Admin Dashboard
 
-![Admin Dashboard](./screenshots/admin-dashboard.png.png)
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
 ---
 
 ## Result Card
 
-![Result Card](./screenshots/result-card.png.png)
+![Result Card](./screenshots/result-card.png)
 
 ---
 
 ## Attendance
 
-![Attendance](./screenshots/attendance.png.png)
+![Attendance](./screenshots/attendance.png)
 
 ---
 
