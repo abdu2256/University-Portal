@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/university-portal-cuonline/static/css/main.410a1631.css",
+    "main.js": "/university-portal-cuonline/static/js/main.d4b77a26.js",
+    "index.html": "/university-portal-cuonline/index.html",
+    "main.410a1631.css.map": "/university-portal-cuonline/static/css/main.410a1631.css.map",
+    "main.d4b77a26.js.map": "/university-portal-cuonline/static/js/main.d4b77a26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.410a1631.css",
+    "static/js/main.d4b77a26.js"
+  ]
+}
