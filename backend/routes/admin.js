@@ -1,0 +1,22 @@
+// routes/admin.js
+const express = require('express');
+const r = express.Router();
+const c = require('../controllers/adminController');
+const { protect, restrictTo } = require('../middleware/auth');
+r.use(protect, restrictTo('admin'));
+r.get('/stats', c.getStats);
+r.get('/users', c.getUsers);
+r.post('/users', c.createUser);
+r.patch('/users/:id', c.updateUser);
+r.delete('/users/:id', c.deleteUser);
+r.get('/courses', c.getCourses);
+r.post('/courses', c.createCourse);
+r.patch('/courses/:id', c.updateCourse);
+r.delete('/courses/:id', c.deleteCourse);
+r.get('/announcements', c.getAnnouncements);
+r.post('/announcements', c.createAnnouncement);
+r.delete('/announcements/:id', c.deleteAnnouncement);
+r.get('/fees', c.getAllFees);
+r.post('/fees', c.createFee);
+r.patch('/fees/:id', c.updateFee);
+module.exports = r;
